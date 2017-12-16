@@ -8,54 +8,34 @@
 3、Controller（调用者）销毁了，接口会自动取消请求，节省网络资源。<br>
 4、可通过闭包、代理回调请求的数据。<br>
 5、轻便、使用简单。<br>
-
+<br>
 ### ###########集成方法<br>
 1、把WBNetworking加到你的项目里。<br>
 2、引入AFNetworking。<br>
-
+<br>
 ### ###########目录结构描述<br>
-├── Readme.md                   // help<br>
-├── app                         // 应用<br>
-├── config                      // 配置<br>
-│   ├── default.json<br>
-│   ├── dev.json                // 开发环境
-│   ├── experiment.json         // 实验
-│   ├── index.js                // 配置控制
-│   ├── local.json              // 本地
-│   ├── production.json         // 生产环境
-│   └── test.json               // 测试环境
-├── data
-├── doc                         // 文档
-├── environment
-├── gulpfile.js
-├── locales
-├── logger-service.js           // 启动日志配置
-├── node_modules
-├── package.json
-├── app-service.js              // 启动应用配置
-├── static                      // web静态资源加载
-│   └── initjson
-│   	└── config.js 		// 提供给前端的配置
-├── test
-├── test-service.js
-└── tools
+├── Configurations              // 配置文件<br>
+├── RequestGenerator            // 生产请求类<br>
+├── URLResponse                 // 组装响应类<br>
+├── APIProxy                    // 请求管理类<br>
+├── BaseAPIManager              // API基础类<br>
+├── Communication               // 通讯<br>
+│   └── Entity
+│     ├── BaseJson              // 基础Json类<br>
+│     ├── Param                 // 存放请求实体<br>
+│     └── Results               // 存放响应实体<br>
+└── └── API                     // 存放接口<br>
+<br>
+### ###########基本使用方法<br>
+1、创建文件继承 WBAPIManager。<br>
+2、实现遵循<WBAPIManager>协议。<br>
+3、实现方法 <br>
+- (NSString *)methodName;<br>
+- (WBAPIManagerRequestType)requestType;<br>
+4、startRequest 开始请求。<br>
+<br>
 
-二、基本使用方法
-
-1、创建文件继承 WBAPIManager。
-
-2、实现遵循<WBAPIManager>协议。
-  
-3、实现方法 
-
-- (NSString *)methodName;
-
-- (WBAPIManagerRequestType)requestType;
-
-4、startRequest 开始请求。
-
-
-三、例子
+### ###########例子<br>
 
 @interface DemoApi : WBBaseAPIManager <WBAPIManager>
 
