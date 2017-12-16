@@ -41,7 +41,7 @@
 4、startRequest 开始请求。<br>
 <br>
 
-#### 例子<br>
+## 接口例子<br>
 ``` Objective-C
 @interface DemoApi : WBBaseAPIManager <WBAPIManager>
 
@@ -84,5 +84,66 @@
     return [[DemoWeatherResults alloc] initWithDictionary:(NSDictionary *)response.data error:nil];
 }
 
+@end
+```
+
+## 调用例子<br>
+``` Objective-C
+@interface ViewController () <WBAPIManagerCallBackDelegate>
+@property (nonatomic, strong) DemoWeatherApi *weatherApi;
+@end
+```
+
+``` Objective-C
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    [self loadWeatherApi];
+    // [self loadWeatherApiDelegate];
+}
+
+// 本例子使用闭包回调数据
+- (void)loadWeatherApi {
+    self.weatherApi = [DemoWeatherApi new];
+    self.weatherApi.refreshCache = YES; // 强制刷新缓存数据
+    [self.weatherApi paramWithCity:@"深圳市"];
+    
+    // 使用闭包回调
+    [self.weatherApi startWithCompletionBlock:^(WBAPIManagerErrorType errorType, WBCommResponse *response) {
+        if (response.status == StatusCode_Succeed) {
+            // 请求正确、数据转成模型
+            DemoWeatherResults *data = [self.weatherApi fetchData:response];
+            NSLog(@"天气数据：%@", data);
+            
+        } else {
+            // error
+            NSLog(@"错误信息：%@", response.message);
+        }
+    }];
+}
+
+// 本例子使用代理回调数据
+- (void)loadWeatherApiDelegate {
+    self.weatherApi = [DemoWeatherApi new];
+    self.weatherApi.delegate = self; 
+    [self.weatherApi paramWithCity:@"深圳市"];
+    [self.weatherApi startRequest];
+}
+
+#pragma mark - WBAPIManagerCallBackDelegate
+- (void)managerCallAPIDidSuccess:(WBBaseAPIManager *)manager response:(WBCommResponse *)response {
+    if ([manager isEqual:self.weatherApi]) {
+        DemoLunarResults *data = [self.weatherApi fetchData:response];
+        NSLog(@"农历数据：%@", data);
+    }
+}
+
+- (void)managerCallAPIDidFailed:(WBBaseAPIManager *)manager response:(WBCommResponse *)response {
+    if ([manager isEqual:self.weatherApi]) {
+        NSLog(@"错误信息：%@", response.message);
+    }
+}
 @end
 ```
