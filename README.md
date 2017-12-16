@@ -15,17 +15,17 @@
 <br>
 ### ###########目录结构描述<br>
 ``` C
-├── Configurations          // 配置文件<br>
-├── RequestGenerator        // 生产请求类<br>
-├── URLResponse             // 组装响应类<br>
-├── APIProxy                // 请求管理类<br>
-├── BaseAPIManager              // API基础类<br>
-├── Communication               // 通讯<br>
-│   └── Entity<br>
-│     ├── BaseJson              // 基础Json类<br>
-│     ├── Param                 // 存放请求实体<br>
-│     └── Results               // 存放响应实体<br>
-└── └── API                     // 存放接口<br>
+├── Configurations          // 配置文件
+├── RequestGenerator        // 生产请求类
+├── URLResponse             // 组装响应类
+├── APIProxy                // 请求管理类
+├── BaseAPIManager          // API基础类
+├── Communication           // 通讯
+│   └── Entity
+│     ├── BaseJson          // 基础Json类
+│     ├── Param             // 存放请求实体
+│     └── Results           // 存放响应实体
+└── └── API                 // 存放接口
 ```
 
 ### ###########基本使用方法<br>
