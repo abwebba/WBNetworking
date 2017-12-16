@@ -14,4 +14,25 @@
 4、可通过闭包、代理回调请求的数据。
 
 5、轻便、使用简单。
-一、
+
+
+一、集成方法
+
+1、把WBNetworking加到你的项目里。
+
+2、引入AFNetworking。
+
+
+二、使用方法
+
+1、创建文件继承 WBAPIManager。
+
+2、实现遵循<WBAPIManager>协议。
+  
+3、实现方法 
+
+- (NSString *)methodName;
+
+- (WBAPIManagerRequestType)requestType;
+
+4、startRequest 开始请求。
