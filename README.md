@@ -41,7 +41,7 @@
 4、startRequest 开始请求。<br>
 <br>
 
-### ###########例子<br>
+#### 例子<br>
 ``` Objective-C
 @interface DemoApi : WBBaseAPIManager <WBAPIManager>
 
