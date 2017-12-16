@@ -27,18 +27,6 @@
 └── └── API                     // 存放接口<br>
 <br>
 
-> Configurations              // 配置文件
-> RequestGenerator            // 生产请求类<br>
-> URLResponse                 // 组装响应类<br>
-> APIProxy                    // 请求管理类<br>
-> BaseAPIManager              // API基础类<br>
-> Communication               // 通讯<br>
->> Entity<br>
->>> BaseJson              // 基础Json类<br>
->>> Param                 // 存放请求实体<br>
->>>Results               // 存放响应实体<br>
->> API                     // 存放接口<br>
-
 ### ###########基本使用方法<br>
 1、创建文件继承 WBAPIManager。<br>
 2、实现遵循<WBAPIManager>协议。<br>
@@ -53,16 +41,18 @@
 <br>
 
 ### ###########例子<br>
-
+``` Objective-C
 @interface DemoApi : WBBaseAPIManager <WBAPIManager>
 
 @end
+```
 
+``` Objective-C
 @implementation DemoWeatherApi
 
 #pragma mark - WBAPIManager
 
-\- (NSString *)methodName {
+- (NSString *)methodName {
 
     return @"/open/api/weather/json.shtml";
     
@@ -115,3 +105,4 @@
 }
 
 @end
+```
