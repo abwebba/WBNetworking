@@ -20,7 +20,7 @@
 ├── APIProxy                    // 请求管理类<br>
 ├── BaseAPIManager              // API基础类<br>
 ├── Communication               // 通讯<br>
-│   └── Entity
+│   └── Entity<br>
 │     ├── BaseJson              // 基础Json类<br>
 │     ├── Param                 // 存放请求实体<br>
 │     └── Results               // 存放响应实体<br>
@@ -30,8 +30,12 @@
 1、创建文件继承 WBAPIManager。<br>
 2、实现遵循<WBAPIManager>协议。<br>
 3、实现方法 <br>
-- (NSString *)methodName;<br>
-- (WBAPIManagerRequestType)requestType;<br>
+``` Objective-C
+- (NSString *)methodName;
+```
+``` Objective-C
+- (WBAPIManagerRequestType)requestType;
+```
 4、startRequest 开始请求。<br>
 <br>
 
@@ -45,7 +49,7 @@
 
 #pragma mark - WBAPIManager
 
-- (NSString *)methodName {
+\- (NSString *)methodName {
 
     return @"/open/api/weather/json.shtml";
     
