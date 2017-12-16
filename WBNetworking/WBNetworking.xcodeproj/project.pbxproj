@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE6333BA2898E33BB62BAAB5 /* libPods-WBNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C09C78BD1A7773D36EA08CE4 /* libPods-WBNetworking.a */; };
+		DF2E95831FE4BC6E0017DFEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95821FE4BC6E0017DFEB /* AppDelegate.m */; };
+		DF2E95861FE4BC6E0017DFEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95851FE4BC6E0017DFEB /* ViewController.m */; };
+		DF2E95891FE4BC6E0017DFEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2E95871FE4BC6E0017DFEB /* Main.storyboard */; };
+		DF2E958B1FE4BC6E0017DFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2E958A1FE4BC6E0017DFEB /* Assets.xcassets */; };
+		DF2E958E1FE4BC6E0017DFEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2E958C1FE4BC6E0017DFEB /* LaunchScreen.storyboard */; };
+		DF2E95911FE4BC6E0017DFEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95901FE4BC6E0017DFEB /* main.m */; };
+		DF2E97351FE4BCCD0017DFEB /* WBRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E959C1FE4BCCD0017DFEB /* WBRequestGenerator.m */; };
+		DF2E973C1FE4BCCD0017DFEB /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95AF1FE4BCCD0017DFEB /* JSONValueTransformer.m */; };
+		DF2E973D1FE4BCCD0017DFEB /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95B21FE4BCCD0017DFEB /* JSONKeyMapper.m */; };
+		DF2E973E1FE4BCCE0017DFEB /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95B51FE4BCCD0017DFEB /* JSONModel.m */; };
+		DF2E973F1FE4BCCE0017DFEB /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95B61FE4BCCD0017DFEB /* JSONModelError.m */; };
+		DF2E97401FE4BCCE0017DFEB /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95B91FE4BCCD0017DFEB /* JSONModelClassProperty.m */; };
+		DF2E97411FE4BCCE0017DFEB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF2E95BB1FE4BCCD0017DFEB /* Info.plist */; };
+		DF2E97431FE4BCCE0017DFEB /* WBURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95C11FE4BCCD0017DFEB /* WBURLResponse.m */; };
+		DF2E97441FE4BCCE0017DFEB /* WBBaseAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95C51FE4BCCD0017DFEB /* WBBaseAPIManager.m */; };
+		DF2E97451FE4BCCE0017DFEB /* WBCommResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95CA1FE4BCCD0017DFEB /* WBCommResponse.m */; };
+		DF2E97481FE4BCCE0017DFEB /* WBBaseJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95CF1FE4BCCD0017DFEB /* WBBaseJSONModel.m */; };
+		DF2E97491FE4BCCE0017DFEB /* WBCacheModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E95D11FE4BCCD0017DFEB /* WBCacheModel.m */; };
+		DF2E97DB1FE4BCCE0017DFEB /* WBApiProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E97341FE4BCCD0017DFEB /* WBApiProxy.m */; };
+		DF2E97E21FE50ECA0017DFEB /* WBCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E97E11FE50ECA0017DFEB /* WBCache.m */; };
+		DF2E97EC1FE510400017DFEB /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E97E41FE510400017DFEB /* YYDiskCache.m */; };
+		DF2E97ED1FE510400017DFEB /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E97E61FE510400017DFEB /* YYCache.m */; };
+		DF2E97EE1FE510400017DFEB /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E97EA1FE510400017DFEB /* YYKVStorage.m */; };
+		DF2E97EF1FE510400017DFEB /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E97EB1FE510400017DFEB /* YYMemoryCache.m */; };
+		DF2E97F31FE524220017DFEB /* DemoWeatherApi.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E97F21FE524220017DFEB /* DemoWeatherApi.m */; };
+		DF2E97F61FE526A10017DFEB /* DemoWeatherResults.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E97F51FE526A10017DFEB /* DemoWeatherResults.m */; };
+		DF2E97F91FE52A470017DFEB /* DemoLunarApi.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E97F81FE52A470017DFEB /* DemoLunarApi.m */; };
+		DF2E97FC1FE52B520017DFEB /* DemoLunarResults.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2E97FB1FE52B520017DFEB /* DemoLunarResults.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E181E19DE465215EA346E4F /* Pods-WBNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBNetworking/Pods-WBNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		901AB7E2AF2DD228FE0F0429 /* Pods-WBNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-WBNetworking/Pods-WBNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		C09C78BD1A7773D36EA08CE4 /* libPods-WBNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WBNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2E957E1FE4BC6E0017DFEB /* WBNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2E95811FE4BC6E0017DFEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF2E95821FE4BC6E0017DFEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF2E95841FE4BC6E0017DFEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DF2E95851FE4BC6E0017DFEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF2E95881FE4BC6E0017DFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF2E958A1FE4BC6E0017DFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF2E958D1FE4BC6E0017DFEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF2E958F1FE4BC6E0017DFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2E95901FE4BC6E0017DFEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF2E95991FE4BCCD0017DFEB /* WBNetworkingConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNetworkingConfiguration.h; sourceTree = "<group>"; };
+		DF2E959B1FE4BCCD0017DFEB /* WBRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBRequestGenerator.h; sourceTree = "<group>"; };
+		DF2E959C1FE4BCCD0017DFEB /* WBRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBRequestGenerator.m; sourceTree = "<group>"; };
+		DF2E95AF1FE4BCCD0017DFEB /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		DF2E95B01FE4BCCD0017DFEB /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		DF2E95B11FE4BCCD0017DFEB /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		DF2E95B21FE4BCCD0017DFEB /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		DF2E95B31FE4BCCD0017DFEB /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		DF2E95B51FE4BCCD0017DFEB /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		DF2E95B61FE4BCCD0017DFEB /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		DF2E95B71FE4BCCD0017DFEB /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		DF2E95B81FE4BCCD0017DFEB /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		DF2E95B91FE4BCCD0017DFEB /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		DF2E95BA1FE4BCCD0017DFEB /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		DF2E95BB1FE4BCCD0017DFEB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2E95BC1FE4BCCD0017DFEB /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		DF2E95C11FE4BCCD0017DFEB /* WBURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBURLResponse.m; sourceTree = "<group>"; };
+		DF2E95C21FE4BCCD0017DFEB /* WBURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBURLResponse.h; sourceTree = "<group>"; };
+		DF2E95C41FE4BCCD0017DFEB /* WBBaseAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBBaseAPIManager.h; sourceTree = "<group>"; };
+		DF2E95C51FE4BCCD0017DFEB /* WBBaseAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBBaseAPIManager.m; sourceTree = "<group>"; };
+		DF2E95C91FE4BCCD0017DFEB /* WBCacheModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCacheModel.h; sourceTree = "<group>"; };
+		DF2E95CA1FE4BCCD0017DFEB /* WBCommResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCommResponse.m; sourceTree = "<group>"; };
+		DF2E95CC1FE4BCCD0017DFEB /* WBBaseJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBBaseJSONModel.h; sourceTree = "<group>"; };
+		DF2E95CF1FE4BCCD0017DFEB /* WBBaseJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBBaseJSONModel.m; sourceTree = "<group>"; };
+		DF2E95D01FE4BCCD0017DFEB /* WBCommResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCommResponse.h; sourceTree = "<group>"; };
+		DF2E95D11FE4BCCD0017DFEB /* WBCacheModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCacheModel.m; sourceTree = "<group>"; };
+		DF2E97331FE4BCCD0017DFEB /* WBApiProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBApiProxy.h; sourceTree = "<group>"; };
+		DF2E97341FE4BCCD0017DFEB /* WBApiProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBApiProxy.m; sourceTree = "<group>"; };
+		DF2E97E01FE50ECA0017DFEB /* WBCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBCache.h; sourceTree = "<group>"; };
+		DF2E97E11FE50ECA0017DFEB /* WBCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBCache.m; sourceTree = "<group>"; };
+		DF2E97E41FE510400017DFEB /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		DF2E97E51FE510400017DFEB /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		DF2E97E61FE510400017DFEB /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		DF2E97E71FE510400017DFEB /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		DF2E97E81FE510400017DFEB /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		DF2E97E91FE510400017DFEB /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		DF2E97EA1FE510400017DFEB /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		DF2E97EB1FE510400017DFEB /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		DF2E97F11FE524220017DFEB /* DemoWeatherApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoWeatherApi.h; sourceTree = "<group>"; };
+		DF2E97F21FE524220017DFEB /* DemoWeatherApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoWeatherApi.m; sourceTree = "<group>"; };
+		DF2E97F41FE526A10017DFEB /* DemoWeatherResults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoWeatherResults.h; sourceTree = "<group>"; };
+		DF2E97F51FE526A10017DFEB /* DemoWeatherResults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoWeatherResults.m; sourceTree = "<group>"; };
+		DF2E97F71FE52A470017DFEB /* DemoLunarApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoLunarApi.h; sourceTree = "<group>"; };
+		DF2E97F81FE52A470017DFEB /* DemoLunarApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoLunarApi.m; sourceTree = "<group>"; };
+		DF2E97FA1FE52B520017DFEB /* DemoLunarResults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoLunarResults.h; sourceTree = "<group>"; };
+		DF2E97FB1FE52B520017DFEB /* DemoLunarResults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoLunarResults.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF2E957B1FE4BC6E0017DFEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6333BA2898E33BB62BAAB5 /* libPods-WBNetworking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BE9E0BE60C39495D20A8E7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E181E19DE465215EA346E4F /* Pods-WBNetworking.debug.xcconfig */,
+				901AB7E2AF2DD228FE0F0429 /* Pods-WBNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BD29E76B4E7FF0CE298EE22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C09C78BD1A7773D36EA08CE4 /* libPods-WBNetworking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF2E95751FE4BC6E0017DFEB = {
+			isa = PBXGroup;
+			children = (
+				DF2E95801FE4BC6E0017DFEB /* WBNetworking */,
+				DF2E957F1FE4BC6E0017DFEB /* Products */,
+				2BE9E0BE60C39495D20A8E7B /* Pods */,
+				6BD29E76B4E7FF0CE298EE22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF2E957F1FE4BC6E0017DFEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E957E1FE4BC6E0017DFEB /* WBNetworking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF2E95801FE4BC6E0017DFEB /* WBNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95971FE4BCCD0017DFEB /* WBNetworking */,
+				DF2E95811FE4BC6E0017DFEB /* AppDelegate.h */,
+				DF2E95821FE4BC6E0017DFEB /* AppDelegate.m */,
+				DF2E95841FE4BC6E0017DFEB /* ViewController.h */,
+				DF2E95851FE4BC6E0017DFEB /* ViewController.m */,
+				DF2E95871FE4BC6E0017DFEB /* Main.storyboard */,
+				DF2E958A1FE4BC6E0017DFEB /* Assets.xcassets */,
+				DF2E958C1FE4BC6E0017DFEB /* LaunchScreen.storyboard */,
+				DF2E958F1FE4BC6E0017DFEB /* Info.plist */,
+				DF2E95901FE4BC6E0017DFEB /* main.m */,
+			);
+			path = WBNetworking;
+			sourceTree = "<group>";
+		};
+		DF2E95971FE4BCCD0017DFEB /* WBNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95981FE4BCCD0017DFEB /* Configurations */,
+				DF2E959A1FE4BCCD0017DFEB /* RequestGenerator */,
+				DF2E959D1FE4BCCD0017DFEB /* Kit */,
+				DF2E95C01FE4BCCD0017DFEB /* URLResponse */,
+				DF2E95C31FE4BCCD0017DFEB /* BaseAPIManager */,
+				DF2E95C61FE4BCCD0017DFEB /* Communication */,
+				DF2E97321FE4BCCD0017DFEB /* APIProxy */,
+			);
+			path = WBNetworking;
+			sourceTree = "<group>";
+		};
+		DF2E95981FE4BCCD0017DFEB /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95991FE4BCCD0017DFEB /* WBNetworkingConfiguration.h */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		DF2E959A1FE4BCCD0017DFEB /* RequestGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E959B1FE4BCCD0017DFEB /* WBRequestGenerator.h */,
+				DF2E959C1FE4BCCD0017DFEB /* WBRequestGenerator.m */,
+			);
+			path = RequestGenerator;
+			sourceTree = "<group>";
+		};
+		DF2E959D1FE4BCCD0017DFEB /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E97DF1FE50EBC0017DFEB /* WBCache */,
+				DF2E95AD1FE4BCCD0017DFEB /* JSONModel */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		DF2E95AD1FE4BCCD0017DFEB /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95AE1FE4BCCD0017DFEB /* JSONModelTransformations */,
+				DF2E95B31FE4BCCD0017DFEB /* module.modulemap */,
+				DF2E95B41FE4BCCD0017DFEB /* JSONModel */,
+				DF2E95BB1FE4BCCD0017DFEB /* Info.plist */,
+				DF2E95BC1FE4BCCD0017DFEB /* JSONModelLib.h */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		DF2E95AE1FE4BCCD0017DFEB /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95AF1FE4BCCD0017DFEB /* JSONValueTransformer.m */,
+				DF2E95B01FE4BCCD0017DFEB /* JSONKeyMapper.h */,
+				DF2E95B11FE4BCCD0017DFEB /* JSONValueTransformer.h */,
+				DF2E95B21FE4BCCD0017DFEB /* JSONKeyMapper.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		DF2E95B41FE4BCCD0017DFEB /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95B51FE4BCCD0017DFEB /* JSONModel.m */,
+				DF2E95B61FE4BCCD0017DFEB /* JSONModelError.m */,
+				DF2E95B71FE4BCCD0017DFEB /* JSONModelClassProperty.h */,
+				DF2E95B81FE4BCCD0017DFEB /* JSONModel.h */,
+				DF2E95B91FE4BCCD0017DFEB /* JSONModelClassProperty.m */,
+				DF2E95BA1FE4BCCD0017DFEB /* JSONModelError.h */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		DF2E95C01FE4BCCD0017DFEB /* URLResponse */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95C11FE4BCCD0017DFEB /* WBURLResponse.m */,
+				DF2E95C21FE4BCCD0017DFEB /* WBURLResponse.h */,
+			);
+			path = URLResponse;
+			sourceTree = "<group>";
+		};
+		DF2E95C31FE4BCCD0017DFEB /* BaseAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95C41FE4BCCD0017DFEB /* WBBaseAPIManager.h */,
+				DF2E95C51FE4BCCD0017DFEB /* WBBaseAPIManager.m */,
+			);
+			path = BaseAPIManager;
+			sourceTree = "<group>";
+		};
+		DF2E95C61FE4BCCD0017DFEB /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95C71FE4BCCD0017DFEB /* Entity */,
+				DF2E97F01FE5142B0017DFEB /* API */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		DF2E95C71FE4BCCD0017DFEB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95C81FE4BCCD0017DFEB /* BaseJson */,
+				DF2E95D31FE4BCCD0017DFEB /* Param */,
+				DF2E95ED1FE4BCCD0017DFEB /* Results */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DF2E95C81FE4BCCD0017DFEB /* BaseJson */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E95D01FE4BCCD0017DFEB /* WBCommResponse.h */,
+				DF2E95CA1FE4BCCD0017DFEB /* WBCommResponse.m */,
+				DF2E95C91FE4BCCD0017DFEB /* WBCacheModel.h */,
+				DF2E95D11FE4BCCD0017DFEB /* WBCacheModel.m */,
+				DF2E95CC1FE4BCCD0017DFEB /* WBBaseJSONModel.h */,
+				DF2E95CF1FE4BCCD0017DFEB /* WBBaseJSONModel.m */,
+			);
+			path = BaseJson;
+			sourceTree = "<group>";
+		};
+		DF2E95D31FE4BCCD0017DFEB /* Param */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Param;
+			sourceTree = "<group>";
+		};
+		DF2E95ED1FE4BCCD0017DFEB /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E97F41FE526A10017DFEB /* DemoWeatherResults.h */,
+				DF2E97F51FE526A10017DFEB /* DemoWeatherResults.m */,
+				DF2E97FA1FE52B520017DFEB /* DemoLunarResults.h */,
+				DF2E97FB1FE52B520017DFEB /* DemoLunarResults.m */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		DF2E97321FE4BCCD0017DFEB /* APIProxy */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E97331FE4BCCD0017DFEB /* WBApiProxy.h */,
+				DF2E97341FE4BCCD0017DFEB /* WBApiProxy.m */,
+			);
+			path = APIProxy;
+			sourceTree = "<group>";
+		};
+		DF2E97DF1FE50EBC0017DFEB /* WBCache */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E97E31FE510400017DFEB /* YYCache */,
+				DF2E97E01FE50ECA0017DFEB /* WBCache.h */,
+				DF2E97E11FE50ECA0017DFEB /* WBCache.m */,
+			);
+			path = WBCache;
+			sourceTree = "<group>";
+		};
+		DF2E97E31FE510400017DFEB /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E97E41FE510400017DFEB /* YYDiskCache.m */,
+				DF2E97E51FE510400017DFEB /* YYKVStorage.h */,
+				DF2E97E61FE510400017DFEB /* YYCache.m */,
+				DF2E97E71FE510400017DFEB /* YYMemoryCache.h */,
+				DF2E97E81FE510400017DFEB /* YYDiskCache.h */,
+				DF2E97E91FE510400017DFEB /* YYCache.h */,
+				DF2E97EA1FE510400017DFEB /* YYKVStorage.m */,
+				DF2E97EB1FE510400017DFEB /* YYMemoryCache.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		DF2E97F01FE5142B0017DFEB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E97F11FE524220017DFEB /* DemoWeatherApi.h */,
+				DF2E97F21FE524220017DFEB /* DemoWeatherApi.m */,
+				DF2E97F71FE52A470017DFEB /* DemoLunarApi.h */,
+				DF2E97F81FE52A470017DFEB /* DemoLunarApi.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF2E957D1FE4BC6E0017DFEB /* WBNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF2E95941FE4BC6E0017DFEB /* Build configuration list for PBXNativeTarget "WBNetworking" */;
+			buildPhases = (
+				78485902B1ECECB1F4CF6DE4 /* [CP] Check Pods Manifest.lock */,
+				DF2E957A1FE4BC6E0017DFEB /* Sources */,
+				DF2E957B1FE4BC6E0017DFEB /* Frameworks */,
+				DF2E957C1FE4BC6E0017DFEB /* Resources */,
+				F7A33AD1096384C73E1B228E /* [CP] Embed Pods Frameworks */,
+				F7B933C45BECEDDCCE755F6D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WBNetworking;
+			productName = WBNetworking;
+			productReference = DF2E957E1FE4BC6E0017DFEB /* WBNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF2E95761FE4BC6E0017DFEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = zwb;
+				TargetAttributes = {
+					DF2E957D1FE4BC6E0017DFEB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DF2E95791FE4BC6E0017DFEB /* Build configuration list for PBXProject "WBNetworking" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF2E95751FE4BC6E0017DFEB;
+			productRefGroup = DF2E957F1FE4BC6E0017DFEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF2E957D1FE4BC6E0017DFEB /* WBNetworking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF2E957C1FE4BC6E0017DFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2E97411FE4BCCE0017DFEB /* Info.plist in Resources */,
+				DF2E958E1FE4BC6E0017DFEB /* LaunchScreen.storyboard in Resources */,
+				DF2E958B1FE4BC6E0017DFEB /* Assets.xcassets in Resources */,
+				DF2E95891FE4BC6E0017DFEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78485902B1ECECB1F4CF6DE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7A33AD1096384C73E1B228E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WBNetworking/Pods-WBNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7B933C45BECEDDCCE755F6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WBNetworking/Pods-WBNetworking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF2E957A1FE4BC6E0017DFEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2E97F61FE526A10017DFEB /* DemoWeatherResults.m in Sources */,
+				DF2E97F91FE52A470017DFEB /* DemoLunarApi.m in Sources */,
+				DF2E97351FE4BCCD0017DFEB /* WBRequestGenerator.m in Sources */,
+				DF2E97EE1FE510400017DFEB /* YYKVStorage.m in Sources */,
+				DF2E97E21FE50ECA0017DFEB /* WBCache.m in Sources */,
+				DF2E97EC1FE510400017DFEB /* YYDiskCache.m in Sources */,
+				DF2E97441FE4BCCE0017DFEB /* WBBaseAPIManager.m in Sources */,
+				DF2E97401FE4BCCE0017DFEB /* JSONModelClassProperty.m in Sources */,
+				DF2E97481FE4BCCE0017DFEB /* WBBaseJSONModel.m in Sources */,
+				DF2E97431FE4BCCE0017DFEB /* WBURLResponse.m in Sources */,
+				DF2E973D1FE4BCCD0017DFEB /* JSONKeyMapper.m in Sources */,
+				DF2E97491FE4BCCE0017DFEB /* WBCacheModel.m in Sources */,
+				DF2E973C1FE4BCCD0017DFEB /* JSONValueTransformer.m in Sources */,
+				DF2E97F31FE524220017DFEB /* DemoWeatherApi.m in Sources */,
+				DF2E97FC1FE52B520017DFEB /* DemoLunarResults.m in Sources */,
+				DF2E973F1FE4BCCE0017DFEB /* JSONModelError.m in Sources */,
+				DF2E95861FE4BC6E0017DFEB /* ViewController.m in Sources */,
+				DF2E97EF1FE510400017DFEB /* YYMemoryCache.m in Sources */,
+				DF2E973E1FE4BCCE0017DFEB /* JSONModel.m in Sources */,
+				DF2E95911FE4BC6E0017DFEB /* main.m in Sources */,
+				DF2E97ED1FE510400017DFEB /* YYCache.m in Sources */,
+				DF2E97451FE4BCCE0017DFEB /* WBCommResponse.m in Sources */,
+				DF2E95831FE4BC6E0017DFEB /* AppDelegate.m in Sources */,
+				DF2E97DB1FE4BCCE0017DFEB /* WBApiProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF2E95871FE4BC6E0017DFEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF2E95881FE4BC6E0017DFEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF2E958C1FE4BC6E0017DFEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF2E958D1FE4BC6E0017DFEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF2E95921FE4BC6E0017DFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF2E95931FE4BC6E0017DFEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF2E95951FE4BC6E0017DFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E181E19DE465215EA346E4F /* Pods-WBNetworking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDLZCGD6CV;
+				INFOPLIST_FILE = WBNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zwb.WBNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF2E95961FE4BC6E0017DFEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901AB7E2AF2DD228FE0F0429 /* Pods-WBNetworking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDLZCGD6CV;
+				INFOPLIST_FILE = WBNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zwb.WBNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF2E95791FE4BC6E0017DFEB /* Build configuration list for PBXProject "WBNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2E95921FE4BC6E0017DFEB /* Debug */,
+				DF2E95931FE4BC6E0017DFEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF2E95941FE4BC6E0017DFEB /* Build configuration list for PBXNativeTarget "WBNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2E95951FE4BC6E0017DFEB /* Debug */,
+				DF2E95961FE4BC6E0017DFEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF2E95761FE4BC6E0017DFEB /* Project object */;
+}
