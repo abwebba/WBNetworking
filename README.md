@@ -1,23 +1,23 @@
 # WBNetworking
 
-### 基于AFNetworking封装的网络框架 <br>
+## 基于AFNetworking封装的网络框架 <br>
 
-特点：<br>
-1、可快速更换其他网络框架。\<br>
-2、每个接口的业务逻辑都可以方便的做个性化处理。\<br>
-3、Controller（调用者）销毁了，接口会自动取消请求，节省网络资源。\<br>
-4、可通过闭包、代理回调请求的数据。\<br>
-5、轻便、使用简单。\<br>
+### 特点：<br>
+1、可快速更换其他网络框架。<br>
+2、每个接口的业务逻辑都可以方便的做个性化处理。<br>
+3、Controller（调用者）销毁了，接口会自动取消请求，节省网络资源。<br>
+4、可通过闭包、代理回调请求的数据。<br>
+5、轻便、使用简单。<br>
 
-###########集成方法\<br>
-1、把WBNetworking加到你的项目里。\<br>
-2、引入AFNetworking。\<br>
+### ###########集成方法<br>
+1、把WBNetworking加到你的项目里。<br>
+2、引入AFNetworking。<br>
 
-###########目录结构描述
-├── Readme.md                   // help
-├── app                         // 应用
-├── config                      // 配置
-│   ├── default.json
+### ###########目录结构描述<br>
+├── Readme.md                   // help<br>
+├── app                         // 应用<br>
+├── config                      // 配置<br>
+│   ├── default.json<br>
 │   ├── dev.json                // 开发环境
 │   ├── experiment.json         // 实验
 │   ├── index.js                // 配置控制
