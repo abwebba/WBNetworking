@@ -32,7 +32,7 @@
 ### ###########基本使用方法<br>
 1、创建文件继承 WBAPIManager。<br>
 2、遵循 WBAPIManager 协议。<br>
-3、实现方法 <br>
+3、实现方法
 ``` Objective-C
 - (NSString *)methodName;
 ```
