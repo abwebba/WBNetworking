@@ -1,8 +1,8 @@
 # WBNetworking
 
-### 基于AFNetworking封装的网络框架 \<n>
+### 基于AFNetworking封装的网络框架 <br>
 
-特点：\br
+特点：<br>
 1、可快速更换其他网络框架。\<br>
 2、每个接口的业务逻辑都可以方便的做个性化处理。\<br>
 3、Controller（调用者）销毁了，接口会自动取消请求，节省网络资源。\<br>
