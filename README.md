@@ -30,7 +30,7 @@
 
 ### ###########基本使用方法<br>
 1、创建文件继承 WBAPIManager。<br>
-2、实现遵循 WBAPIManager 协议。<br>
+2、遵循 WBAPIManager 协议。<br>
 3、实现方法 <br>
 ``` Objective-C
 - (NSString *)methodName;
@@ -38,7 +38,7 @@
 ``` Objective-C
 - (WBAPIManagerRequestType)requestType;
 ```
-    4、startRequest 开始请求。<br>
+4、startRequest 开始请求。<br>
 <br>
 
 #### 例子<br>
