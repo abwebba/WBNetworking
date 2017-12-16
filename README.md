@@ -44,7 +44,7 @@
 
 @end
 
-@implementation DemoWeatherApi
+@implementation DemoWeatherApi\n
 #pragma mark - WBAPIManager
 - (NSString *)methodName {
     return @"/open/api/weather/json.shtml";
