@@ -21,12 +21,12 @@
 ├── APIProxy                // 请求管理类
 ├── BaseAPIManager          // API基础类
 ├── Kit                     // 存放工具
-├── Communication           // 通讯
-│   └── Entity
-│     ├── BaseJson          // 基础Json类
-│     ├── Param             // 存放请求实体
-│     └── Results           // 存放响应实体
-└   └── API                 // 存放接口
+└── Communication           // 通讯
+    ├── Entity
+    │ ├── BaseJson          // 基础Json类
+    │ ├── Param             // 存放请求实体
+    │ └── Results           // 存放响应实体
+    └── API                 // 存放接口
 ```
 
 ### ###########基本使用方法<br>
